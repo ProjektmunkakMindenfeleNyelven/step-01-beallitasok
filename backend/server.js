@@ -9,7 +9,7 @@ const ejs = require('ejs'); // view engine beállításához
 const express = require('express'); // szerveralkalmazás létrehozásához
 
 // Szerveralkalmazás létrehozása
-const PORT = process.env.PORT; // környezeti változó (.env állományból)
+const PORT = process.env.PORT || 5000; // környezeti változó (.env állományból)
 const app = express(); // szerverpéldány létrehozása
 
 // Middleware-k
